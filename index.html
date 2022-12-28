@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainz - Quiz</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <div class="start-btn-wrapper">
+        <button class="start-btn">Start quiz</button>
+    </div>
+
+    <div class="rules-box">
+        <div class="rules-heading">
+            <h2></h2>
+        </div>
+    </div>
+
+    <div class="info-container">
+        <div class="info-heading">
+            <h2 class="info-text">Some rules of this quiz</h2>
+        </div>
+        <div class="info-list">
+            <ol>
+                <li>You have only <span class="time">15 seconds</span> per each question.</li>
+                <li>Once you select your answer, it can't be undone.</li>
+                <li>You can't select any option once time goes off.</li>
+                <li>You can't exit from the quiz while you're playing.</li>
+                <li>You will get points based on your correct answers.</li>
+            </ol>
+        </div>
+        <div class="info-action">
+            <button class="exit-btn">Exit quiz</button>
+            <button class="continue-btn">Continue</button>
+        </div>
+    </div>
+
+    <div class="quiz-container">
+        <div class="quiz-heading row">
+            <h3 class="quiz-head-text">
+                Brainz Quiz App
+            </h3>
+
+            <div class="timer-wrapper row">
+                <p class="time-status">Time START</p>
+                <P class="time-count">00</P>
+            </div>
+        </div>
+
+        <div class="timer-line"></div>
+
+        <div class="question-wrapper">
+            <h2 class="question-num">1.</h2>
+            <h2 class="question">What does CSS stand for?</h2>
+        </div>
+
+        <div class="option-container">
+            <div class="option-a option">
+                <input type="radio" name="option" value="option-a" id="a">
+                <label for="a" class="label-a">OPTION A</label>
+            </div>
+
+            <div class="option-b option">
+               <input type="radio" name="option" value="option-b" id="b">
+               <label for="b" class="label-b">OPTION B</label>
+            </div>
+
+            <div class="option-c option">
+                <input type="radio" name="option" value="option-c" id="c">
+                <label for="c" class="label-c">OPTION C</label>
+            </div>
+
+            <div class="option-d option">
+                <input type="radio" name="option" value="option-d" id="d">
+                <label for="d" class="label-d">OPTION D</label>
+            </div>
+        </div>
+
+        <div class="footer-line"></div>
+
+        <div class="question-footer row">
+            <p class="m-r-22"><span class="current-question"></span> of <span class="total-question"></span> Questions</p>
+            <button class="next-que-btn">Next</button>
+        </div>
+    </div>
+
+    <div class="result-container">
+        <div class="result-status">
+            <p class="status">
+                You got
+                <span class="score-point"></span>
+                out of <span class="result-total"></span>
+            </p>
+        </div>
+<!--
+        <div class="result-summary">
+            <div class="summary-wrapper">
+                <div class="summary-row">
+                    <div class="row">
+                        <h3 class="q-s-num">1.</h3>
+                        <h3 class="q-s">This is question one</h3>
+                    </div>
+                    <p class="ques-status">correct</p>
+                </div>
+
+                <div class="summary-response">
+                        
+                            <p>You: <span class="user-answer">this is the user answer</span></p>
+                            <p>Answer: <span class="system-answer">this is the correct answer</span></p>
+                 
+                </div>
+            </div>
+        </div>-->
+
+        
+        <div class="take-action-container">
+           <!--- <button class="replay">Replay</button>-->
+            <button class="quit exit-btn">Quit</button>
+        </div>
+    </div>
+    
+    <script src="/questions.js"></script>
+    <script src="/index.js"></script>
+</body>
+</html>
